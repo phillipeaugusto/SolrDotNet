@@ -50,7 +50,7 @@ solr create -c "desired-core-name"
 5) - Open the project and go to: appsettings.Development or appsettings and populate the information, according to the Apache Solr installation:
 
  Ex:
-  "sun": {
+  "Solr": {
     "url": "http://localhost",
     "Core": "desired-core-name",
     "Port": "0000"
