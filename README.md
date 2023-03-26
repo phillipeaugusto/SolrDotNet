@@ -9,12 +9,12 @@ solr create -c "nome-do-core-desejado"
 
 3) Após a criação do core, modificar o arquivo: "managed-schema.xml", que "fica na pasta de instalação do Solr/ "nome-do-core-desejado" 
 
-  <field name="FieldForSearch" type="text_general" indexed="true" stored="true" required="true" multiValued="false"/>
+  "<field name="FieldForSearch" type="text_general" indexed="true" stored="true" required="true" multiValued="false"/>
   <field name="_nest_path_" type="_nest_path_"/>
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
-  <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>"
 
 4) - Ir no Core Admin e dar um Reload
 
@@ -38,12 +38,12 @@ solr create -c "desired-core-name"
 
 3) After creating the core, modify the file: "managed-schema.xml", which "is located in the Solr installation folder/ "desired-core-name"
 
-  <field name="FieldForSearch" type="text_general" indexed="true" stored="true" required="true" multiValued="false"/>
+  "<field name="FieldForSearch" type="text_general" indexed="true" stored="true" required="true" multiValued="false"/>
   <field name="_nest_path_" type="_nest_path_"/>
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
-  <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>"
 
 4) - Go to Core Admin and Reload
 
