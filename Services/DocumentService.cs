@@ -39,7 +39,7 @@ public class DocumentService:
         for (var i = 1; i <= leitor.NumberOfPages; i++) 
             textPdf.Append(PdfTextExtractor.GetTextFromPage(leitor, i));
 
-        await _solrDocumentRepository.AddOrUpdate(new Document(Guid.NewGuid().ToString(), leitor.ToString()));
+        await _solrDocumentRepository.AddOrUpdate(new Document(Guid.NewGuid().ToString(), textPdf.ToString()));
         return await Result.ResultAsync(true, "Successfully Inserted PDF Text!");
     }
 
